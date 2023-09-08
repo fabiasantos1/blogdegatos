@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --font-family: font-family: 'Mulish', sans-serif;
+
+  --white: #FFFFFF;
+  --header1: #065E7C;
+  --blue: #387E96;
+  --main1: #202024;
+  --main2: #121214;
+
+}
+
+#app {
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  height: 100vh;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+header, container {
+  background-color: var(--header1);
+  height: 7.2rem;
+  width: 43.0rem;
+}
+
+header, nav, form, img {
+  display: flex;
+  gap: 1.6rem 2.8rem;
+}
+
+.input-wrapper label {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+main, container {
+  background-color: var(--white);
+
+}
+
+footer {
+  background-color: var(--blue);
+}
